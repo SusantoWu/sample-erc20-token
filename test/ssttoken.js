@@ -45,6 +45,14 @@ contract('SSTToken', (accounts) => {
       const balance = await instance.balanceOf.call(accounts[1])
       assert.equal(amount(balance), '200', "200 wasn't in the first account")
     })
+
+    it('should caller be owner only', async () => {
+      const instance = await SSTToken.deployed()
+      await instance.mint(accounts[1], '100', { from: accounts[2] })
+
+      const balance = await instance.balanceOf.call(accounts[1])
+      assert.equal(amount(balance), '200', "200 wasn't in the first account")
+    })
   })
 
   /* it('should call a function that depends on a linked library', async () => {
