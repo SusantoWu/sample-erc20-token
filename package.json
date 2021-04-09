@@ -1,0 +1,20 @@
+{
+  "name": "sample-erc20-token",
+  "version": "0.0.1",
+  "description": "Sample ERC20 token on Ethereum network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "susanto-wu",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.0.0",
+    "ganache-cli": "^6.12.2",
+    "prettier": "^2.2.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.7",
+    "solhint": "^3.3.4",
+    "solhint-plugin-prettier": "0.0.5",
+    "truffle": "^5.3.1"
+  }
+}
