@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@openzeppelin/contracts": "^4.0.0",
+    "@openzeppelin/test-helpers": "^0.5.10",
     "ganache-cli": "^6.12.2",
     "prettier": "^2.2.1",
     "prettier-plugin-solidity": "^1.0.0-beta.7",
